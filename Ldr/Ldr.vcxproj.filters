@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\common">
+      <UniqueIdentifier>{953e4019-c67b-486f-8629-4eb013d0fbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{335121a0-6b35-433a-8085-961fdca6ac1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\crypt">
+      <UniqueIdentifier>{ae44b2ae-df05-4f86-9be8-7175c4eb3e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{028cdafe-e7f3-4076-95b1-ae6eb7275db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asm">
+      <UniqueIdentifier>{ec155bfe-0b17-4804-bac2-701ee8572c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\script">
+      <UniqueIdentifier>{863aa4d0-4696-4b9d-8329-ca8b959ba45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypt">
+      <UniqueIdentifier>{41b7604b-1899-4851-8b23-359dc32c4eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main">
+      <UniqueIdentifier>{d3ba3abb-9f49-4b07-a5fc-0f726c89bd35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Ldr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt\XChaCha20Crypt.c">
+      <Filter>src\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt\AesCrypt.c">
+      <Filter>src\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Hash.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Memory.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\MiniStd.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Payload.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Runtime.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Syscalls.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\SysNative.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Win32.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exec\Execute.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypt\XorCrypt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\MainEXE.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\MainDLL.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\MainXLL.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Debug.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\aes256cbc.py">
+      <Filter>src\script</Filter>
+    </None>
+    <None Include="scripts\xchacha20.py">
+      <Filter>src\script</Filter>
+    </None>
+    <None Include="scripts\xor.py" />
+    <None Include="scripts\Aes256XCrypt.go" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Ldr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypt\AesCrypt.h">
+      <Filter>include\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypt\XChaCha20Crypt.h">
+      <Filter>include\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Win32.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\phnt.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\Defines.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Hash.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\Macros.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\MiniStd.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Memory.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Payload.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Runtime.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Syscalls.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\SysNative.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\exec\Execute.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypt\XorCrypt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\IatCamo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\Debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\asm\Syscall.x64.masm">
+      <Filter>src\asm</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

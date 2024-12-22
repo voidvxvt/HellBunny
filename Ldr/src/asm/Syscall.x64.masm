@@ -1,0 +1,31 @@
+
+public SysSetConfig
+public SysInvokeIndirect
+public SysInvokeDirect
+
+.code
+
+
+SysSetConfig PROC
+    mov r11, rcx
+    ret
+SysSetConfig ENDP
+
+
+SysInvokeIndirect PROC
+    mov r10, rcx
+    mov eax, dword ptr [r11 + 8h]    ; move System Service Number into EAX
+    jmp qword ptr [r11]              ; jump to the `syscall` instruction address in NTDLL
+    ret
+SysInvokeIndirect ENDP
+
+
+SysInvokeDirect PROC
+    mov r10, rcx
+    mov eax, dword ptr [r11 + 8h]   ; move System Service Number into EAX
+    syscall                         ; make direct syscall
+    ret
+SysInvokeDirect ENDP
+
+
+end
